@@ -24,6 +24,7 @@ Download and install from https://www.mingw-w64.org/
 This step ensures you have C compiler and tools.
 
 2. Install Python development headers (necessary for C extensions)
+
 Ubuntu/Debian:
 ```bash
 sudo apt-get install python3-dev
@@ -52,3 +53,9 @@ During `build_ext`,
 - Headers are automatically located using Python's include paths
 
 A test example is included in the file `test_mathops.py`. 
+```bash
+python test_mathops.py
+
+5 + 3 = 8 # performed by the add function in mathops.c
+2.5 * 4.0 = 10.0 # performed by the multiply function in mathops.c
+```
