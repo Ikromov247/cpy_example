@@ -18,7 +18,7 @@ xcode-select --install
 ```
 Windows:
 
-Downlaod and install from https://www.mingw-w64.org/.
+Download and install from https://www.mingw-w64.org/
 
 
 This step ensures you have C compiler and tools.
@@ -32,7 +32,7 @@ macOS:
 Usually, the deveopment headers are included in installations from python.org or homebrew.
 
 Windows:
-When installing python, select "Custom Installation", and make sure to enable "Download debugging symbols" and "Download debug binaries".
+When installing python from python.org, select "Custom Installation", and make sure to enable "Download debugging symbols" and "Download debug binaries".
 
 3. Install setuptools and wheel via pip
 ```bash
@@ -51,3 +51,4 @@ During `build_ext`,
 - The linker combines them into a shared libary (.so/.pyd/.dylib)
 - Headers are automatically located using Python's include paths
 
+A test example is included in the file `test_mathops.py`. 
