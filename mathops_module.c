@@ -3,8 +3,8 @@
 // need to install python development environment to access Python.h
 #include <Python.h>
 
-extern int add(int a, int b)
-extern double multiply(double a, double b)
+extern int add(int a, int b);
+extern double multiply(double a, double b);
 
 //wrapper for add function
 static PyObject* py_add(PyObject* self, PyObject* args){
